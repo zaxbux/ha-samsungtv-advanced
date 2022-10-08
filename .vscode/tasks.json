@@ -1,0 +1,65 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Home Assistant on port 9123",
+			"type": "shell",
+			"command": "container start",
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Home Assistant configuration against /config",
+			"type": "shell",
+			"command": "container check",
+			"problemMatcher": []
+		},
+		{
+			"label": "Upgrade Home Assistant to latest dev",
+			"type": "shell",
+			"command": "container install",
+			"problemMatcher": []
+		},
+		{
+			"label": "Install a specific version of Home Assistant",
+			"type": "shell",
+			"command": "container set-version",
+			"problemMatcher": []
+		},
+		{
+			"label": "Install Python Requirements (dev)",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": [
+				"-m",
+				"pip",
+				"install",
+				"-r",
+				"requirements_dev.txt"
+			],
+			"problemMatcher": []
+		},
+		/* {
+			"label": "Open Home Assistant GUI",
+			"type": "shell",
+			"linux": {
+				"command": "open",
+			},
+			"windows": {
+				"command": "start"
+			},
+			"osx": {
+				"command": "open"
+			},
+			"args": [
+				"http://localhost:9123"
+			],
+			"presentation": {
+				"reveal": "silent",
+				"clear": true,
+				"panel": "dedicated",
+				"group": "cap",
+			},
+			"problemMatcher": []
+		}, */
+	]
+}

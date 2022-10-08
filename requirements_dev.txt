@@ -1,0 +1,6 @@
+homeassistant
+getmac==0.8.3
+async-upnp-client==0.31.2
+wakeonlan==2.1.0
+samsungctl[websocket]==0.7.1
+samsungtvws[async,encrypted]==2.5.0

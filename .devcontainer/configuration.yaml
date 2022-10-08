@@ -1,0 +1,22 @@
+default_config:
+
+homeassistant:
+    auth_providers:
+        - type: trusted_networks
+          trusted_networks:
+              - 127.0.0.0/8
+              - 172.0.0.0/8
+              - fe80::/64
+          allow_bypass_login: true
+
+samsungtv_advanced:
+    - host: 192.168.40.110
+      name: Samsung UN40EH5300
+
+logger:
+    default: info
+    logs:
+        #async_upnp_client: debug
+        custom_components.samsungtv_advanced: debug
+# If you need to debug uncomment the line below (doc: https://www.home-assistant.io/integrations/debugpy/)
+# debugpy:

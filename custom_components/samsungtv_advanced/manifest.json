@@ -1,0 +1,44 @@
+{
+	"domain": "samsungtv_advanced",
+	"name": "Samsung Smart TV",
+	"version": "0.0.1",
+	"requirements": [
+		"getmac==0.8.2",
+		"samsungctl[websocket]==0.7.1",
+		"samsungtvws[async,encrypted]==2.5.0",
+		"async-upnp-client==0.31.2",
+		"wakeonlan==2.1.0"
+	],
+	"documentation": "https://github.com/zaxbux/ha-samsungtv-advanced",
+	"issue_tracker": "https://github.com/zaxbux/ha-samsungtv-advanced/issues",
+	"codeowners": [
+		"@zaxbux"
+	],
+	"config_flow": true,
+	"iot_class": "local_push",
+	"dependencies": [
+		"ssdp"
+	],
+	"loggers": [
+		"samsungctl",
+		"samsungtvws"
+	],
+	"supported_brands": {},
+	"zeroconf": [],
+	"ssdp": [
+		{
+			"st": "urn:samsung.com:device:RemoteControlReceiver:1"
+		},
+		{
+			"st": "urn:samsung.com:service:MainTVAgent2:1"
+		},
+		{
+			"manufacturer": "Samsung",
+			"st": "urn:schemas-upnp-org:service:RenderingControl:1"
+		},
+		{
+			"manufacturer": "Samsung Electronics",
+			"st": "urn:schemas-upnp-org:service:RenderingControl:1"
+		}
+	]
+}

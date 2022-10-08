@@ -1,0 +1,20 @@
+set_dmr_picture:
+    description: Send Digital Media Renderer (DMR) commands.
+    target:
+    fields:
+        brightness:
+            description: |
+                type: float
+                range: 0.0 - 1.0
+        contrast:
+            description: |
+                type: float
+                range: 0.0 - 1.0
+        sharpness:
+            description: |
+                type: float
+                range: 0.0 - 1.0
+        color_temperature:
+            description: |
+                type: float
+                range: 0.0 - 1.0
